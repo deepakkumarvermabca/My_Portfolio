@@ -1,0 +1,25 @@
+{
+  "short_name": "Portfolio App",
+  "name": "Deepak Kumar Verma - Portfolio",
+  "icons": [
+    {
+      "src": "https://avatars.githubusercontent.com/u/65648568?s=400&u=007a8989cd6f2d16adf7d6b00b8427015e620579&v=4",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/65648568?s=400&u=007a8989cd6f2d16adf7d6b00b8427015e620579&v=4",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://avatars.githubusercontent.com/u/65648568?s=400&u=007a8989cd6f2d16adf7d6b00b8427015e620579&v=4",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
