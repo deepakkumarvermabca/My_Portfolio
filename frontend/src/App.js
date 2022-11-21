@@ -16,6 +16,7 @@ import AdminPanel from "./components/Admin/AdminPanel";
 import Timeline from "./components/Admin/Timeline";
 import Youtube from "./components/Admin/Youtube";
 import Project from "./components/Admin/Project";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
@@ -67,6 +68,7 @@ function App() {
               path="/admin/project"
               element={isAuthenticated ? <Project /> : <Login />}
             />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
         </>
