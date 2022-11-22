@@ -1,12 +1,24 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "description": "",
   "main": "backend/server.js",
-  "author": "Deepak Kumar Verma <deepakramgarh2000@gmail.com>",
-  "license": "MIT",
-  "type": "module",
+  "type":"module",
+  "scripts": {
+     "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepakkumarvermabca/My_Portfolio.git"
+  },
+  "author": "Deepak Kumar Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepakkumarvermabca/My_Portfolio/issues"
+  },
+  "homepage": "https://github.com/deepakkumarvermabca/My_Portfolio#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
     "cloudinary": "^1.32.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
@@ -14,9 +26,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.2",
     "nodemailer": "^6.8.0"
-  },
-  "scripts": {
-    "start": "node backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && yarn add --prefix frontend && yarn run build --prefix frontend"
   }
 }
